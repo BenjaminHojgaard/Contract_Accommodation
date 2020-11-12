@@ -1,7 +1,7 @@
 package service;
 
-import dk.lsd.teamA.model.Hotel;
-import dk.lsd.teamA.model.Room;
+
+import dto.RoomDTO;
 
 import java.util.Collection;
 import java.util.Date;
@@ -14,7 +14,7 @@ public interface RoomUtility {
      * @param numberOfGuests
      * @return
      */
-    Collection<Room> rooms(String city, Date date, int numberOfGuests);
+    Collection<RoomDTO> rooms(String city, Date date, int numberOfGuests);
 
     /**
      * @param roomNumbers

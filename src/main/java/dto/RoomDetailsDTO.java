@@ -1,6 +1,7 @@
 package dto;
 
-import dk.lsd.teamA.model.RoomType;
+
+import types.RoomType;
 
 public class RoomDetailsDTO {
     /**
