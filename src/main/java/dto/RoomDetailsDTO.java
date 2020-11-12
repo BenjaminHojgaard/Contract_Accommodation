@@ -16,4 +16,37 @@ public class RoomDetailsDTO {
      * Indicates information regarding the hotel
      */
     private HotelDTO hotel;
+
+    public RoomDetailsDTO(int capacity, Enum<RoomType> roomType, HotelDTO hotel) {
+        this.capacity = capacity;
+        this.roomType = roomType;
+        this.hotel = hotel;
+    }
+
+    public RoomDetailsDTO() {
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public Enum<RoomType> getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(Enum<RoomType> roomType) {
+        this.roomType = roomType;
+    }
+
+    public HotelDTO getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(HotelDTO hotel) {
+        this.hotel = hotel;
+    }
 }
