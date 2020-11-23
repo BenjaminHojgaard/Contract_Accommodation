@@ -2,7 +2,9 @@ package dto;
 
 import types.RoomType;
 
-public class RoomDTO {
+import java.io.Serializable;
+
+public class RoomDTO implements Serializable {
 
     /**
      * Indicates information about the Hotel

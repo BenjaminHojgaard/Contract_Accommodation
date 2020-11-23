@@ -6,14 +6,14 @@
 
     <groupId>org.example</groupId>
     <artifactId>contract_accommodation</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub BenjaminHojgaard Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/BenjaminHojgaard/Contract_Accommodation</url>
+            <name>GitHub benjaminhojgaard Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/benjaminhojgaard/Contract_Accommodation</url>
         </repository>
     </distributionManagement>
 

@@ -3,7 +3,9 @@ package dto;
 
 import types.RoomType;
 
-public class RoomDetailsDTO {
+import java.io.Serializable;
+
+public class RoomDetailsDTO implements Serializable {
     /**
      * Indicate the max capacity of guests that can stay in a room
      */
