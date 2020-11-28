@@ -3,8 +3,7 @@ package service;
 import dto.BookingDTO;
 import dto.HotelDTO;
 
-import java.rmi.Remote;
-import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
@@ -19,12 +18,12 @@ public interface HotelUtility{
     Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests);
 
     /**
-     * @param roomNumber
+     * @param roomNumbers
      * @param passportNumber
      * @return
      * Creates a booking using roomNumber and possportNumber
      */
-    boolean createBooking(String roomNumber, String passportNumber, int numberOfGuests, boolean lateArrival);
+    boolean createBooking(ArrayList<String> roomNumbers, String passportNumber, int numberOfGuests, boolean lateArrival);
     /**
      * @param bookingID
      * @return
