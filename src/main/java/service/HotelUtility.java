@@ -16,7 +16,7 @@ public interface HotelUtility extends Remote{
      * @return
      *
      */
-    Collection<HotelDTO> fetchHotels(String city, Date date, int numberOfGuests) throws RemoteException;
+    Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests) throws RemoteException;
 
     /**
      * @param roomNumber
@@ -38,5 +38,5 @@ public interface HotelUtility extends Remote{
      * @return
      * Fetching a booking by booking ID
      */
-    BookingDTO fetchBooking(int bookingID) throws RemoteException;
+    BookingDTO findBooking(int bookingID) throws RemoteException;
 }

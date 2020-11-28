@@ -16,11 +16,12 @@ public interface RoomUtility extends Remote {
      * @param numberOfGuests
      * @return
      */
-    Collection<RoomDTO> fetchRooms(String city, Date date, int numberOfGuests) throws RemoteException;
+    Collection<RoomDTO> findVacantRooms(int hotelNumber, Date date, int numberOfGuests) throws RemoteException;
 
     /**
      * @param roomNumbers
      * @return
      */
+
     boolean markRoomAsReserved(List<String> roomNumbers) throws RemoteException;
 }
