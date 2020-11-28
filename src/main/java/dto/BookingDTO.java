@@ -1,9 +1,7 @@
 package dto;
-
-import java.io.Serializable;
 import java.util.List;
 
-public class BookingDTO implements Serializable {
+public class BookingDTO {
 
     /**
      * Supplied by guest for booking

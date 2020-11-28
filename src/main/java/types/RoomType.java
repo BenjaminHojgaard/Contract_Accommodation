@@ -1,8 +1,6 @@
 package types;
 
-import java.io.Serializable;
-
-public enum RoomType implements Serializable {
+public enum RoomType {
     S,
     D,
     T,

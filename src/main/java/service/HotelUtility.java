@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
 import java.util.Collection;
 import java.util.Date;
 
-public interface HotelUtility extends Remote{
+public interface HotelUtility{
     /**
      * @param city
      * @param date
@@ -16,7 +16,7 @@ public interface HotelUtility extends Remote{
      * @return
      *
      */
-    Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests) throws RemoteException;
+    Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests);
 
     /**
      * @param roomNumber
@@ -24,19 +24,18 @@ public interface HotelUtility extends Remote{
      * @return
      * Creates a booking using roomNumber and possportNumber
      */
-    boolean createBooking(String roomNumber, String passportNumber) throws RemoteException;
-
+    boolean createBooking(String roomNumber, String passportNumber, int numberOfGuests, boolean lateArrival);
     /**
      * @param bookingID
      * @return
      * Cancels a booking using a booking ID
      */
-    boolean cancelBooking(int bookingID) throws RemoteException;
+    boolean cancelBooking(int bookingID);
 
     /**
      * @param bookingID
      * @return
      * Fetching a booking by booking ID
      */
-    BookingDTO findBooking(int bookingID) throws RemoteException;
+    BookingDTO findBooking(int bookingID);
 }

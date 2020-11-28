@@ -1,8 +1,6 @@
 package dto;
 
-import java.io.Serializable;
-
-public class HotelDetailsDTO implements Serializable {
+public class HotelDetailsDTO {
     /**
      * Indicates hotel five star rating
      */

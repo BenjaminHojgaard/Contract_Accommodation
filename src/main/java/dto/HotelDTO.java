@@ -1,11 +1,9 @@
 package dto;
 
-import java.io.Serializable;
-
 /**
  * A shorted version of the HotelDetailsDTO
  */
-public class HotelDTO implements Serializable {
+public class HotelDTO {
     /**
      * returns name of hotel
      */

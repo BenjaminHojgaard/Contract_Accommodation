@@ -1,10 +1,8 @@
 package dto;
-
-import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class RoomBookingDTO implements Serializable {
+public class RoomBookingDTO {
 
     /**
      * Indicates the arrival date for a room

@@ -9,19 +9,19 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-public interface RoomUtility extends Remote {
+public interface RoomUtility{
     /**
-     * @param city
+     * @param hotelNumber
      * @param date
      * @param numberOfGuests
      * @return
      */
-    Collection<RoomDTO> findVacantRooms(int hotelNumber, Date date, int numberOfGuests) throws RemoteException;
+    Collection<RoomDTO> findVacantRooms(int hotelNumber, Date date, int numberOfGuests);
 
     /**
      * @param roomNumbers
      * @return
      */
 
-    boolean markRoomAsReserved(List<String> roomNumbers) throws RemoteException;
+    boolean markRoomAsReserved(List<String> roomNumbers);
 }
