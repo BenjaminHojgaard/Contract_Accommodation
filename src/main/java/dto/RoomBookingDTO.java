@@ -15,12 +15,12 @@ public class RoomBookingDTO {
     /**
      * indicates the rooms booked
      */
-    private List<RoomDTO> rooms;
+    private RoomDTO room;
 
-    public RoomBookingDTO(Date arrivalDate, Date departureDate, List<RoomDTO> rooms) {
+    public RoomBookingDTO(Date arrivalDate, Date departureDate, RoomDTO room) {
         this.arrivalDate = arrivalDate;
         this.departureDate = departureDate;
-        this.rooms = rooms;
+        this.room = room;
     }
 
     public RoomBookingDTO() {
@@ -42,11 +42,11 @@ public class RoomBookingDTO {
         this.departureDate = departureDate;
     }
 
-    public List<RoomDTO> getRooms() {
-        return rooms;
+    public RoomDTO getRoom() {
+        return room;
     }
 
-    public void setRooms(List<RoomDTO> rooms) {
-        this.rooms = rooms;
+    public void setRooms(RoomDTO room) {
+        this.room = room;
     }
 }

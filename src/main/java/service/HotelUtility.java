@@ -1,6 +1,7 @@
 package service;
 
 import dto.BookingDTO;
+import dto.CreateBookingDTO;
 import dto.HotelDTO;
 
 import java.util.ArrayList;
@@ -18,12 +19,11 @@ public interface HotelUtility{
     Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests);
 
     /**
-     * @param roomNumbers
-     * @param passportNumber
+     * @param booking
      * @return
      * Creates a booking using roomNumber and possportNumber
      */
-    boolean createBooking(ArrayList<String> roomNumbers, String passportNumber, int numberOfGuests, boolean lateArrival);
+    boolean createBooking(CreateBookingDTO booking);
     /**
      * @param bookingID
      * @return
