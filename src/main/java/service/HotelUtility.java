@@ -18,23 +18,5 @@ public interface HotelUtility{
      */
     Collection<HotelDTO> findVacantHotels(String city, Date date, int numberOfGuests);
 
-    /**
-     * @param booking
-     * @return
-     * Creates a booking using roomNumber and possportNumber
-     */
-    boolean createBooking(CreateBookingDTO booking);
-    /**
-     * @param bookingID
-     * @return
-     * Cancels a booking using a booking ID
-     */
-    boolean cancelBooking(int bookingID);
 
-    /**
-     * @param bookingID
-     * @return
-     * Fetching a booking by booking ID
-     */
-    BookingDTO findBooking(int bookingID);
 }
