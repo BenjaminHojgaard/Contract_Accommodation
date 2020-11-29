@@ -1,6 +1,7 @@
 package service;
 
 import dto.RoomDTO;
+import dto.VacantRoomsDTO;
 
 import java.util.Collection;
 import java.util.Date;
@@ -8,12 +9,10 @@ import java.util.List;
 
 public interface RoomUtility{
     /**
-     * @param hotelNumber
-     * @param date
-     * @param numberOfGuests
+     * @param vacantRoomsDTO
      * @return
      */
-    Collection<RoomDTO> findVacantRooms(int hotelNumber, Date date, int numberOfGuests);
+    Collection<RoomDTO> findVacantRooms(VacantRoomsDTO vacantRoomsDTO);
 
     /**
      * @param roomNumbers
