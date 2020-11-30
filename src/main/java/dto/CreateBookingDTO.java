@@ -21,6 +21,9 @@ public class CreateBookingDTO {
         this.lateArrival = lateArrival;
     }
 
+    public CreateBookingDTO() {
+    }
+
     public ArrayList<String> getRoomNumbers() {
         return roomNumbers;
     }

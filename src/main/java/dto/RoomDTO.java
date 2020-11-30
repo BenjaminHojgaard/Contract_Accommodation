@@ -13,11 +13,11 @@ public class RoomDTO {
      */
     private String roomNumber;
     /**
-     * Indicates the room type through an Enum
+     * Indicates the room type through a String
      */
-    private Enum<RoomType> roomType;
+    private String roomType;
 
-    public RoomDTO(HotelDTO hotelDTO, String roomNumber, Enum<RoomType> roomType) {
+    public RoomDTO(HotelDTO hotelDTO, String roomNumber, String roomType) {
         this.hotelDTO = hotelDTO;
         this.roomNumber = roomNumber;
         this.roomType = roomType;
@@ -42,11 +42,11 @@ public class RoomDTO {
         this.roomNumber = roomNumber;
     }
 
-    public Enum<RoomType> getRoomType() {
+    public String getRoomType() {
         return roomType;
     }
 
-    public void setRoomType(Enum<RoomType> roomType) {
+    public void setRoomType(String roomType) {
         this.roomType = roomType;
     }
 }
